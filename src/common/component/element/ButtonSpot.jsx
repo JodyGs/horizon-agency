@@ -4,11 +4,19 @@ import { useEffect, useRef } from "react";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 
-export const ButtonSpot = ({ title, className, exLink }) => {
+export const ButtonSpot = ({ title, className, exLink, onClick }) => {
 	const btnRef = useRef(null);
 	const spanRef = useRef(null);
 
 	const router = useRouter();
+
+	const handleClick = () => {
+		if (onClick) {
+			onClick();
+		} else if (exLink) {
+			router.push(exLink);
+		}
+	};
 
 	useEffect(() => {
 		const handleMouseMove = (e) => {
@@ -16,14 +24,17 @@ export const ButtonSpot = ({ title, className, exLink }) => {
 			const offset = e.offsetX;
 			const left = `${(offset / width) * 100}%`;
 
-			spanRef.current.animate({ left }, { duration: 250, fill: "forwards" });
+			if (spanRef.current) {
+				spanRef.current.style.left = left;
+				spanRef.current.style.transition = 'left 250ms ease-out';
+			}
 		};
 
 		const handleMouseLeave = () => {
-			spanRef.current.animate(
-				{ left: "50%" },
-				{ duration: 100, fill: "forwards" }
-			);
+			if (spanRef.current) {
+				spanRef.current.style.left = '50%';
+				spanRef.current.style.transition = 'left 100ms ease-out';
+			}
 		};
 
 		const btn = btnRef.current;
@@ -43,7 +54,7 @@ export const ButtonSpot = ({ title, className, exLink }) => {
 
 	return (
 		<motion.button
-			onClick={() => router.push(exLink)}
+			onClick={handleClick}
 			whileTap={{ scale: 0.985 }}
 			ref={btnRef}
 			className={clsx(

@@ -24,10 +24,20 @@ const Navbar = () => {
 	const close = () => {
 		setOpen(false);
 	};
+
+	const handleContactClick = () => {
+		router.push("https://cal.com/jody.gs/30min");
+	};
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
+		const handleScroll = () => {
 			setScrolled(window.scrollY > 10);
-		});
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
 
 	return (
@@ -88,7 +98,7 @@ const Navbar = () => {
 						<DarkmodeSwitch />
 					</div>
 					<ButtonSpot
-						onClick={() => router.push("https://cal.com/jody.gs/30min")}
+						onClick={handleContactClick}
 						title="Nous contacter"
 						exLink={"https://cal.com/jody.gs/30min"}
 					/>

@@ -57,7 +57,7 @@ const nextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              `script-src 'self'${isDev ? " 'unsafe-eval'" : ""} 'unsafe-inline'`,
+              `script-src 'self'${isDev ? " 'unsafe-eval' 'unsafe-inline'" : " 'unsafe-inline'"}`,
               "style-src 'self' 'unsafe-inline'",
               "font-src 'self'",
               "img-src 'self' data: blob:",
@@ -66,7 +66,8 @@ const nextConfig = {
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self' https://cal.com",
-              "worker-src 'self' blob:"
+              "worker-src 'self' blob:",
+              "manifest-src 'self'"
             ].join("; ")
           },
           {
