@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import DarkmodeSwitch from "../element/DarkmodeSwitch";
 import { ButtonSpot } from "../element/ButtonSpot";
 
@@ -13,6 +13,7 @@ import { ButtonSpot } from "../element/ButtonSpot";
 
 const Navbar = () => {
 	const pathname = usePathname();
+	const router = useRouter();
 	const [open, setOpen] = useState(false);
 	const [scroll, setScrolled] = useState(false);
 

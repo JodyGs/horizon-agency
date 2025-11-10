@@ -3,8 +3,6 @@ import React from "react";
 import { FaUmbrella } from "react-icons/fa";
 import CardSolution from "./component/Card";
 import ComponentTransition from "@/common/component/element/ComponentTransition";
-import Link from "next/link";
-import Buttons from "@/common/component/element/Buttons";
 import Button from "@/common/component/element/Button";
 
 const Solution = () => {

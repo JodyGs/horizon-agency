@@ -1,6 +1,4 @@
 "use client";
-import Buttons from "@/common/component/element/Buttons";
-import ImgScale from "@/common/module/Hero/component/ImgScale";
 import Rails from "@/common/component/element/Rails";
 import React from "react";
 import { motion, useScroll } from "framer-motion";
@@ -118,7 +116,6 @@ const Hero = () => {
 					))}
 				</motion.div>
 
-				{/* <ImgScale /> */}
 			</div>
 		</div>
 	);

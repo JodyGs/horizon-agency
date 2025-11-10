@@ -1,7 +1,5 @@
 import React from "react";
 
-import { FaTwitter, FaLinkedin, FaDiscord } from "react-icons/fa";
-
 const Footer = () => {
 	return (
 		<div className="flex flex-col items-center justify-center w-full">
