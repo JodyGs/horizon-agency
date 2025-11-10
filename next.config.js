@@ -47,21 +47,27 @@ const nextConfig = {
   },
 
   async headers() {
+    const isDev = process.env.NODE_ENV === 'development';
+    
     return [
       {
         source: "/(.*)", // Applique les en-têtes à toutes les routes
         headers: [
           {
             key: "Content-Security-Policy",
-            value: `
-              default-src 'self';
-              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://static.cloudflareinsights.com;
-              style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-              font-src 'self' https://fonts.gstatic.com;
-              img-src 'self' data:;
-              connect-src 'self';
-              frame-ancestors 'none';
-            `.replace(/\n/g, ''), // Supprime les sauts de ligne
+            value: [
+              "default-src 'self'",
+              `script-src 'self'${isDev ? " 'unsafe-eval'" : ""} 'unsafe-inline'`,
+              "style-src 'self' 'unsafe-inline'",
+              "font-src 'self'",
+              "img-src 'self' data: blob:",
+              `connect-src 'self' https://cal.com${isDev ? " ws: wss:" : ""}`,
+              "frame-ancestors 'none'",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self' https://cal.com",
+              "worker-src 'self' blob:"
+            ].join("; ")
           },
           {
             key: "Referrer-Policy",

@@ -9,7 +9,7 @@ export default function CardOffer({title, className = ''}) {
     <div className={clsx(className,`px-2 py-20 relative`)}>
       <div className="w-full px-5 relative overflow-hidden flex-col rounded-3xl flex justify-center items-center bg-neutral-300/50 dark:bg-neutral-800/50 py-40">
         <Image
-          src="https://images.unsplash.com/photo-1653302803784-c5b7918dbf43?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="/card-offer-bg.webp"
           alt="image"
           width={400}
           height={400}

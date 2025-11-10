@@ -36,7 +36,7 @@ const Card = () => {
 			</ComponentTransition>
 			<ComponentTransition
 				delay={0.1}
-				className="w-full h-auto md:h-[250px] object-cover md:basis-[30%] overflow-hidden  border-[1px] border-neutral-300 dark:border-neutral-700 rounded-3xl"
+				className="w-full h-[250px] md:basis-[30%] overflow-hidden border-[1px] border-neutral-300 dark:border-neutral-700 rounded-3xl"
 			>
 				<Image
 					src="/img.webp"
@@ -44,7 +44,7 @@ const Card = () => {
 					width={280}
 					height={250}
 					loading="lazy"
-					className="w-full h-full object-cover scale-110"
+					className="w-full h-full object-cover"
 					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 280px"
 				/>
 			</ComponentTransition>
