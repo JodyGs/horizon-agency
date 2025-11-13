@@ -20,7 +20,7 @@ const MentionsLegales = () => {
 								Informations légales
 							</h2>
 							<p className="mb-4">
-								Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l'Économie Numérique, dite L.C.E.N., et à l'article L.111-1 du Code de la consommation, il est porté à la connaissance des utilisateurs et visiteurs du site les présentes mentions légales.
+								Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l&apos;Économie Numérique, dite L.C.E.N., et à l&apos;article L.111-1 du Code de la consommation, il est porté à la connaissance des utilisateurs et visiteurs du site les présentes mentions légales.
 							</p>
 							
 							<h3 className="text-xl font-semibold text-black dark:text-white mb-3">
@@ -58,10 +58,10 @@ const MentionsLegales = () => {
 								Propriété intellectuelle
 							</h2>
 							<p className="mb-4">
-								L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+								L&apos;ensemble de ce site relève de la législation française et internationale sur le droit d&apos;auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
 							</p>
 							<p className="mb-6">
-								La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication.
+								La reproduction de tout ou partie de ce site sur un support électronique quel qu&apos;il soit est formellement interdite sauf autorisation expresse du directeur de la publication.
 							</p>
 						</section>
 
@@ -70,7 +70,7 @@ const MentionsLegales = () => {
 								Protection des données personnelles
 							</h2>
 							<p className="mb-4">
-								Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi « informatique et libertés » du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité, de limitation du traitement, d'opposition aux traitements, ainsi que du droit de définir des directives relatives au sort de vos données après votre décès.
+								Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi « informatique et libertés » du 6 janvier 1978 modifiée, vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;effacement, de portabilité, de limitation du traitement, d&apos;opposition aux traitements, ainsi que du droit de définir des directives relatives au sort de vos données après votre décès.
 							</p>
 							<p className="mb-4">
 								Les données collectées via ce site sont traitées dans le respect de votre vie privée. Elles ne sont utilisées que dans le cadre de nos services et ne sont jamais communiquées à des tiers sans votre consentement.
@@ -97,13 +97,13 @@ const MentionsLegales = () => {
 								Responsabilité
 							</h2>
 							<p className="mb-4">
-								Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l'année, mais peut toutefois contenir des inexactitudes ou des omissions.
+								Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l&apos;année, mais peut toutefois contenir des inexactitudes ou des omissions.
 							</p>
 							<p className="mb-4">
 								Si vous constatez une lacune, erreur ou ce qui paraît être un dysfonctionnement, merci de bien vouloir le signaler par email en décrivant le problème de la manière la plus précise possible.
 							</p>
 							<p className="mb-6">
-								Jody Gonzales ne pourra en aucun cas être tenu responsable de tout dommage de quelque nature qu'il soit résultant de l'interprétation ou de l'utilisation des informations et/ou documents disponibles sur ce site.
+								Jody Gonzales ne pourra en aucun cas être tenu responsable de tout dommage de quelque nature qu&apos;il soit résultant de l&apos;interprétation ou de l&apos;utilisation des informations et/ou documents disponibles sur ce site.
 							</p>
 						</section>
 
@@ -112,10 +112,10 @@ const MentionsLegales = () => {
 								Liens hypertextes
 							</h2>
 							<p className="mb-4">
-								Les liens hypertextes mis en place dans le cadre du présent site web en direction d'autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de Jody Gonzales.
+								Les liens hypertextes mis en place dans le cadre du présent site web en direction d&apos;autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de Jody Gonzales.
 							</p>
 							<p className="mb-6">
-								De même, la création de liens vers ce site doit faire l'objet d'une autorisation préalable expresse.
+								De même, la création de liens vers ce site doit faire l&apos;objet d&apos;une autorisation préalable expresse.
 							</p>
 						</section>
 
@@ -124,7 +124,7 @@ const MentionsLegales = () => {
 								Droit applicable et attribution de juridiction
 							</h2>
 							<p className="mb-6">
-								Tout litige en relation avec l'utilisation du site est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Carpentras.
+								Tout litige en relation avec l&apos;utilisation du site est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Carpentras.
 							</p>
 						</section>
 
