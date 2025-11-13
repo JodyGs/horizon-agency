@@ -58,16 +58,18 @@ const nextConfig = {
             value: [
               "default-src 'self'",
               `script-src 'self'${isDev ? " 'unsafe-eval' 'unsafe-inline'" : " 'unsafe-inline'"}`,
-              "style-src 'self' 'unsafe-inline'",
-              "font-src 'self'",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: blob:",
               `connect-src 'self' https://cal.com${isDev ? " ws: wss:" : ""}`,
+              "frame-src https://cal.com",
               "frame-ancestors 'none'",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self' https://cal.com",
               "worker-src 'self' blob:",
-              "manifest-src 'self'"
+              "manifest-src 'self'",
+              "upgrade-insecure-requests"
             ].join("; ")
           },
           {
