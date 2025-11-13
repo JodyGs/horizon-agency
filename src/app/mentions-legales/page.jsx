@@ -112,7 +112,7 @@ const MentionsLegales = () => {
 								Liens hypertextes
 							</h2>
 							<p className="mb-4">
-								Les liens hypertextes mis en place dans le cadre du présent site web en direction d&apos;autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de Jody Gonzales.
+								Les liens hypertextes mis en place dans le cadre du présent site web en direction d&apos;autres ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de Jody Gonzales
 							</p>
 							<p className="mb-6">
 								De même, la création de liens vers ce site doit faire l&apos;objet d&apos;une autorisation préalable expresse.
